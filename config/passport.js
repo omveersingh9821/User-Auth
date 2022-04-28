@@ -31,6 +31,7 @@ module.exports = function(passport){
             .catch(err => console.log(err));
         })
     );
+    
     // used to serialize the user for the session
     passport.serializeUser(function(user, done) {
         done(null, user.id); 

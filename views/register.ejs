@@ -1,12 +1,12 @@
-<div class="row mt-5">
-    <div class="col-md-6 m-auto">
+<div class="row mt-5 ">
+    <div class="col-md-6 m-auto ">
       <div class="card card-body">
         <h1 class="text-center mb-3">
           <i class="fa fa-user-plus"></i> Register
         </h1>
         <%- include('./partials/messages') %>
         <form action="/users/register" method="POST">
-          <div class="form-group">
+          <div class="form-group ">
             <label for="name">Name</label>
             <input
               type="name"
@@ -51,11 +51,9 @@
               value="<%= typeof password2 != 'undefined' ? password2 : '' %>"
             />
           </div>
-          <button type="submit" class="btn btn-primary btn-block">
-            Register
-          </button>
+          <button type="submit" class="btn btn-info  w-100 mt-3" style="background-color: #1877f2;">SIGN UP</button>
         </form>
-        <p class="lead mt-4">Have An Account? <a href="/users/login">Login</a></p>
+        <p class="lead mt-4 text-info text-center" ><a href="/users/login" style="color: #1877f2;text-decoration: none;">Already Have An Account?</a></p>
       </div>
     </div>
   </div>

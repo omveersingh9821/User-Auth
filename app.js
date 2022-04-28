@@ -10,9 +10,9 @@ const flash = require('connect-flash');
 const session = require('express-session');
 //passport
 const passport = require('passport');
+//google auth
+const passportGoogle = require('./config/passport-google-oauth2-strategy');
 
-//mongoose
-const mongoose = require('mongoose');
 //configure database
 const db = require('./config/mongoose');
 const passportConfig = require('./config/passport');
@@ -38,6 +38,7 @@ app.use(session({
     resave: false,
     saveUninitialized: true
 }));
+
 // use passport session
 app.use(passport.initialize());
 app.use(passport.session());
