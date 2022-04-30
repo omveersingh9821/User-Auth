@@ -2,6 +2,7 @@ const express = require('express');
 const passport = require('passport');
 //require model
 const User = require('../models/user');
+const Otp = require('../models/otp');
 //bcrypt
 const bcrypt = require('bcryptjs');
 
@@ -75,7 +76,7 @@ module.exports.userRegistration = function(req,res){
 //handle login
 module.exports.logIn = (req,res,next)=>{
     passport.authenticate('local',{
-        successRedirect: '/dashboard',
+        successRedirect: '/users/dashboard',
         failureRedirect: '/users/login',
         failureFlash:true
     })(req,res,next);
@@ -104,12 +105,16 @@ module.exports.changePassword =async (req,res)=>{
         req.body.password = await bcrypt.hash(req.body.password, 10);
         await User.findByIdAndUpdate(req.user.id,req.body);
         req.flash('success_msg','Password changed successfully');
-        return res.redirect('/dashboard');
+        return res.redirect('/users/dashboard');
     }
     
 }
 
 //password forget
-module.exports.forgetPassword = (req,res)=>{
+module.exports.emailSend = async(req,res)=>{
     return res.render('forget_password');
 }
+
+
+
+

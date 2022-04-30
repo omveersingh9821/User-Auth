@@ -15,15 +15,14 @@ router.get('/',(req,res) =>{
 });
 router.use('/users',require('./users'));
 
-router.get('/dashboard',ensureAuthenticated,function(req,res){
+router.get('/users/dashboard',ensureAuthenticated,function(req,res){
     console.log(req.user);
     res.render('dashboard',{
         user:req.user.name,
         title:'Profile'
     });
-     
-
 });
+
 
 
 

@@ -11,7 +11,7 @@ passport.use(new googleStrategy({
     clientSecret:"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",
     callbackURL:"http://localhost:9800/users/auth/google/callback"
     },
-    function(accesToken,refreshToken,profile,done){
+    function(accessToken,refreshToken,profile,done){
         User.findOne({email:profile.emails[0].value}).exec(function(err,user){
             //find user
             if(err){

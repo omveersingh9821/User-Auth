@@ -29,17 +29,12 @@ router.get('/register',(req,res) =>{
     });
 });
 //change password page
-router.get('/changepassword',(req,res) =>{
+router.get('/changePassword',ensureAuthenticated,(req,res) =>{
     res.render('changePassword',{
         title:'Reset Password'
     });
 });
-
-router.get('/changepassword',(req,res) =>{
-    res.render('changePassword',{
-        title:'Reset Password'
-    });
-});
+//forget password
 router.get('/forget-password',(req,res)=>{
     res.render('forget_password',{
         title:'Forget Password'
@@ -54,11 +49,11 @@ router.post('/login',userController.logIn);
 //logout handle
 router.get('/logout',userController.logOut);
 
-//reset password
-router.post('/changepassword',ensureAuthenticated,userController.changePassword);
+//change password
+router.post('/changePassword',ensureAuthenticated,userController.changePassword);
 
 //forget password
-router.get('/forget-password',userController.forgetPassword);
+router.get('/forget-password',userController.emailSend);
 
 //google authentication
 router.get('/auth/google',passport.authenticate('google',{scope:['profile','email']}));
@@ -68,7 +63,8 @@ router.get('/auth/google/callback',passport.authenticate('google',{
 
 }),function(req,res){
     req.flash('success_msg','You are log in successfully')
-    return res.redirect('/dashboard');
+    return res.redirect('/users/dashboard');
 });
+
 //export router
 module.exports = router;
