@@ -7,18 +7,20 @@ const User=require('../models/user');
 
 //tell passport to use a new strategy for google login
 passport.use(new googleStrategy({
-    clientID:"840608695207-knegrkhvtk0l8cg4emimtunu9ldq08ep.apps.googleusercontent.com",
-    clientSecret:"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",
+    clientID:"758631718083-r0g045qit1ulqtffgu60n18kar264gar.apps.googleusercontent.com",
+    clientSecret:"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",
     callbackURL:"http://localhost:9800/users/auth/google/callback"
     },
+
     function(accessToken,refreshToken,profile,done){
-        User.findOne({email:profile.emails[0].value}).exec(function(err,user){
-            //find user
+        console.log(accessToken);
+        console.log(profile);
+        User.findOne({email:profile.emails[0].value},function(err,user){
             if(err){
-                console.log('error in google strategy passport',err);
+                console.log('error in strategy');
                 return;
             }
-            console.log(profile);
+         
             if(user){
                 //if user foud set user as req.user
                 return done(null,user);
@@ -30,14 +32,16 @@ passport.use(new googleStrategy({
                     password:crypto.randomBytes(20).toString('hex')
                 },function(err,user){
                     if(err){
-                        console.log('error in creating user in google strategy passport',err);
+                        console.log('error in creating google strategy',err);
                         return;
                     }
                     return done(null,user);
-                })
-            }
-        })
-    }
+                });
+              
+            }  
 
-))
+        });
+    }
+));
+
 module.exports=passport;

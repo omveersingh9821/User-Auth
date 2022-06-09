@@ -4,14 +4,23 @@ const express = require('express');
 //express layouts  npm i express-layouts
 const expressLayouts = require('express-ejs-layouts');
 
+
 //flash
 const flash = require('connect-flash');
+
+
 //express session
 const session = require('express-session');
+
+//connect mongo
+const MongoStore = require('connect-mongo');
+
 //passport
 const passport = require('passport');
 //google auth
 const passportGoogle = require('./config/passport-google-oauth2-strategy');
+//cookie parser
+const cookie = require('cookie-parser');
 
 //configure database
 const db = require('./config/mongoose');
@@ -30,13 +39,27 @@ app.use(expressLayouts);
 app.set('view engine','ejs');
 
 //body parser
-app.use(express.urlencoded({extended:false}));
+app.use(express.urlencoded({extended:flash}));
+app.use(cookie());
 
 //express session middleware
 app.use(session({
     secret: 'secret',
     resave: false,
-    saveUninitialized: true
+    saveUninitialized: true,
+    cookie:{
+        maxAge:1000*60*60*24*7
+    },
+    store:MongoStore.create(
+        {
+            mongoUrl:'mongodb://0.0.0/user-auth1',
+            autoRemove: 'disabled'
+        },
+        function(err){
+            console.log(err ||  'connect-mongodb setup ok');
+        }
+    )
+
 }));
 
 // use passport session
@@ -64,5 +87,6 @@ app.listen(port,(err) =>{
     if(err){
         console.log('Error in express server');
     }
+    
     console.log(`Successfully running on port : ${port}`);
 })
