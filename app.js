@@ -12,8 +12,7 @@ const flash = require('connect-flash');
 //express session
 const session = require('express-session');
 
-//connect mongo
-const MongoStore = require('connect-mongo');
+
 
 //passport
 const passport = require('passport');
@@ -49,16 +48,7 @@ app.use(session({
     saveUninitialized: true,
     cookie:{
         maxAge:1000*60*60*24*7
-    },
-    store:MongoStore.create(
-        {
-            mongoUrl:'mongodb://0.0.0/user-auth1',
-            autoRemove: 'disabled'
-        },
-        function(err){
-            console.log(err ||  'connect-mongodb setup ok');
-        }
-    )
+    }
 
 }));
 
