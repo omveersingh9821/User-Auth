@@ -7,23 +7,23 @@ const expressLayouts = require('express-ejs-layouts');
 
 //flash
 const flash = require('connect-flash');
-
+const db = require('./config/mongoose');
 
 //express session
 const session = require('express-session');
+// const MongoStore = require('connect-mongo');
 
 
 
 //passport
 const passport = require('passport');
+const passportConfig = require('./config/passport');
 //google auth
 const passportGoogle = require('./config/passport-google-oauth2-strategy');
 //cookie parser
 const cookie = require('cookie-parser');
 
-//configure database
-const db = require('./config/mongoose');
-const passportConfig = require('./config/passport');
+
 
 //port
 const port = 9800;
@@ -43,12 +43,18 @@ app.use(cookie());
 
 //express session middleware
 app.use(session({
+    name:'Authentication',
     secret: 'secret',
     resave: false,
     saveUninitialized: true,
     cookie:{
-        maxAge:1000*60*60*24*7
-    }
+        maxAge:(10000*60*60*24*7)
+    },
+    // store:MongoStore.create({
+    //     mongoUrl:  'mongodb://0.0.0/user-auth1',
+    //     autoRemove: 'disabled'
+    
+    // })
 
 }));
 
