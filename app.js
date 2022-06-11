@@ -1,19 +1,23 @@
 //require express
 const express = require('express');
 
-//express layouts  npm i express-layouts
+//require environment
+const env = require('./config/environment');
+
+
+
+//express layouts -- npm i express-layouts
 const expressLayouts = require('express-ejs-layouts');
 
 
 //flash
 const flash = require('connect-flash');
+
+//db
 const db = require('./config/mongoose');
 
 //express session
 const session = require('express-session');
-// const MongoStore = require('connect-mongo');
-
-
 
 //passport
 const passport = require('passport');
@@ -23,9 +27,7 @@ const passportGoogle = require('./config/passport-google-oauth2-strategy');
 //cookie parser
 const cookie = require('cookie-parser');
 
-
-
-//port
+//port number
 const port = 9800;
 
 //use express
@@ -41,22 +43,21 @@ app.set('view engine','ejs');
 app.use(express.urlencoded({extended:flash}));
 app.use(cookie());
 
+
+const path = require('path');
+
 //express session middleware
 app.use(session({
     name:'Authentication',
-    secret: 'secret',
+    secret: env.session_cookie_key,
     resave: false,
     saveUninitialized: true,
     cookie:{
-        maxAge:(10000*60*60*24*7)
+        maxAge:10000*60*60*24*7
     },
-    // store:MongoStore.create({
-    //     mongoUrl:  'mongodb://0.0.0/user-auth1',
-    //     autoRemove: 'disabled'
     
-    // })
-
 }));
+
 
 // use passport session
 app.use(passport.initialize());

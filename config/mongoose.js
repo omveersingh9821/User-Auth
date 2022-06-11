@@ -1,8 +1,11 @@
 //require the library
 const mongoose = require('mongoose');
 
+//require env
+const env = require('./environment');
+
 // connect to the database
-mongoose.connect('mongodb://0.0.0/user-auth1');
+mongoose.connect(`mongodb://0.0.0/${env.db}`);
 
 // acquire the connection to check if it is successfull
 const db=mongoose.connection;

@@ -1,22 +1,14 @@
 const res = require('express/lib/response');
 const nodemailer = require('nodemailer');
 
+const env = require('../config/environment');
 
-module.exports.sendEmail = async(user,token)=>{
+
+module.exports.sendEmail = (user,token)=>{
     try {
-        const transporter =await nodemailer.createTransport({
-            host:'smtp.gmail.com',
-            service:'gmail',
-            port:587,
-            secure:false,
-            auth:{
-                user:'userauthentication98@gmail.com',
-                pass:'tjxcvyljeozhpggr'
-            }
+        const transporter = nodemailer.createTransport(env.smtp);
 
-        });
-
-        let info = await transporter.sendMail({
+        let info = transporter.sendMail({
             from: '"User Auth"<userauthentication98@gmail.com>', // sender address
             to: user.email, 
             subject: "Reset Password", 
