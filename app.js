@@ -25,7 +25,7 @@ const passportConfig = require('./config/passport');
 const passportGoogle = require('./config/passport-google-oauth2-strategy');
 
 //connect mongo
-// const MongoStore = require('connect-mongo');
+const MongoStore = require('connect-mongo');
 
 //cookie parser
 const cookie = require('cookie-parser');
@@ -59,15 +59,15 @@ app.use(session({
     cookie:{
         maxAge:10000*60*60
     },
-    // store: MongoStore.create(
-    //     {
-    //       mongoUrl: db._connectionString,
-    //       autoRemove: 'disabled',
-    //     },
-    //     function (err) {
-    //       console.log.log(err || 'connect mongo setup ok')
-    //     }
-    //   ),
+    store: MongoStore.create(
+        {
+          mongoUrl: db._connectionString,
+          autoRemove: 'disabled',
+        },
+        function (err) {
+          console.log.log(err || 'connect mongo setup ok')
+        }
+      ),
 
     
 }));
