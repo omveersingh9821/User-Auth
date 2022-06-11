@@ -5,7 +5,7 @@ const mongoose = require('mongoose');
 const env = require('./environment');
 
 // connect to the database
-// mongoose.connect(`mongodb://0.0.0/${process.env.DB}`);
+// mongoose.connect(`mongodb://0.0.0/${process.env.DB}`); 
 mongoose.connect(env.db);
 
 // acquire the connection to check if it is successfull
