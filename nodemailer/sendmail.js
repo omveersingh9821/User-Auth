@@ -22,7 +22,7 @@ module.exports.sendEmail = (user,token)=>{
             from: '"User Auth"<omveersingh9821@gmail.com>', // sender address
             to: user.email, 
             subject: "Reset Password", 
-            html: `<p>Hii ${user.name} please click here to <a href="https://localhost:9800/users/reset-password?token=${token}">Reset</a>your password</p>`, 
+            html: `<p>Hii ${user.name} please click here to <a href="https://user-auth-o818.onrender.com/users/reset-password?token=${token}">Reset</a>your password</p>`, 
         });
         console.log('message sent ',info);
            
