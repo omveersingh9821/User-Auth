@@ -151,7 +151,9 @@ module.exports.resetPasswordLink = async(req,res)=>{
 //reset password 
 module.exports.resetPasswordLoad= async(req,res)=>{
     try {
-        const token=req.query.token;
+
+        const token = req.query.token;
+        // console.log(token);
         const user=await User.findOne({token:token});
         if(user){
             res.render('reset_password',{

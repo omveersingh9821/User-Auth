@@ -5,6 +5,7 @@ const express = require('express');
 const env = require('./config/environment');
 const logger = require('morgan');
 
+require('dotenv').config();
 //express layouts -- npm i express-layouts
 const expressLayouts = require('express-ejs-layouts');
 
@@ -31,7 +32,7 @@ const MongoStore = require('connect-mongo');
 const cookie = require('cookie-parser');
 
 //port number
-const port = process.env.PORT;
+const port = 9800;
 
 //use express
 const app = express();
@@ -53,7 +54,7 @@ const path = require('path');
 //express session middleware
 app.use(session({
     name:'Authentication',
-    secret: env.session_cookie_key,
+    secret: 'blahsomething',
     resave: false,
     saveUninitialized: false,
     cookie:{

@@ -1,143 +1,63 @@
-::1 - - [11/Jun/2022:10:51:08 +0000] "GET / HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
-::1 - - [11/Jun/2022:10:51:09 +0000] "GET /favicon.ico HTTP/1.1" 404 150 "http://localhost:9800/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
-::1 - - [11/Jun/2022:10:51:10 +0000] "GET / HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
-::1 - - [11/Jun/2022:10:51:20 +0000] "GET / HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
-::1 - - [11/Jun/2022:10:51:24 +0000] "GET /users/login HTTP/1.1" 304 - "http://localhost:9800/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
-::1 - - [11/Jun/2022:12:51:22 +0000] "GET / HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
-::1 - - [11/Jun/2022:12:51:25 +0000] "GET /users/login HTTP/1.1" 304 - "http://localhost:9800/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
-::1 - - [11/Jun/2022:12:51:26 +0000] "GET /users/auth/google HTTP/1.1" 302 0 "http://localhost:9800/users/login" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
-::1 - - [11/Jun/2022:12:53:27 +0000] "GET /users/login HTTP/1.1" 304 - "http://localhost:9800/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
-::1 - - [11/Jun/2022:12:53:28 +0000] "GET /users/auth/google HTTP/1.1" 302 0 "http://localhost:9800/users/login" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
-::1 - - [11/Jun/2022:12:54:23 +0000] "GET /users/login HTTP/1.1" 304 - "http://localhost:9800/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
-::1 - - [11/Jun/2022:12:54:24 +0000] "GET /users/auth/google HTTP/1.1" 302 0 "http://localhost:9800/users/login" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
-::1 - - [11/Jun/2022:12:55:23 +0000] "GET /users/auth/google HTTP/1.1" 302 0 "http://localhost:9800/users/login" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
-::1 - - [11/Jun/2022:13:03:24 +0000] "GET /users/login HTTP/1.1" 304 - "http://localhost:9800/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
-::1 - - [11/Jun/2022:13:03:29 +0000] "GET /users/auth/google HTTP/1.1" 302 0 "http://localhost:9800/users/login" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
-::1 - - [11/Jun/2022:13:03:34 +0000] "GET /users/auth/google HTTP/1.1" 302 0 "http://localhost:9800/users/login" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
-::1 - - [11/Jun/2022:13:03:39 +0000] "GET /users/register HTTP/1.1" 304 - "http://localhost:9800/users/login" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
-::1 - - [11/Jun/2022:13:03:55 +0000] "POST /users/register HTTP/1.1" 302 68 "http://localhost:9800/users/register" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
-::1 - - [11/Jun/2022:13:03:55 +0000] "GET /users/login HTTP/1.1" 200 2800 "http://localhost:9800/users/register" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
-::1 - - [11/Jun/2022:13:04:03 +0000] "POST /users/login HTTP/1.1" 302 76 "http://localhost:9800/users/login" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
-::1 - - [11/Jun/2022:13:04:03 +0000] "GET /users/dashboard HTTP/1.1" 304 - "http://localhost:9800/users/login" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
-::1 - - [11/Jun/2022:13:04:09 +0000] "GET /users/logout HTTP/1.1" 302 68 "http://localhost:9800/users/dashboard" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
-::1 - - [11/Jun/2022:13:04:09 +0000] "GET /users/login HTTP/1.1" 200 2781 "http://localhost:9800/users/dashboard" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
-::1 - - [11/Jun/2022:13:04:17 +0000] "POST /users/login HTTP/1.1" 302 76 "http://localhost:9800/users/login" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
-::1 - - [11/Jun/2022:13:04:17 +0000] "GET /users/dashboard HTTP/1.1" 302 68 "http://localhost:9800/users/login" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
-::1 - - [11/Jun/2022:13:04:17 +0000] "GET /users/login HTTP/1.1" 200 2798 "http://localhost:9800/users/login" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
-::1 - - [11/Jun/2022:13:04:35 +0000] "GET /users/dashboard HTTP/1.1" 302 68 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
-::1 - - [11/Jun/2022:13:04:35 +0000] "GET /users/login HTTP/1.1" 200 2503 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
-::1 - - [11/Jun/2022:13:04:44 +0000] "POST /users/login HTTP/1.1" 302 76 "http://localhost:9800/users/login" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
-::1 - - [11/Jun/2022:13:04:44 +0000] "GET /users/dashboard HTTP/1.1" 200 1325 "http://localhost:9800/users/login" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
-::1 - - [11/Jun/2022:13:04:46 +0000] "GET /users/dashboard HTTP/1.1" 304 - "http://localhost:9800/users/login" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
-::1 - - [11/Jun/2022:13:04:47 +0000] "GET /users/logout HTTP/1.1" 302 68 "http://localhost:9800/users/dashboard" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
-::1 - - [11/Jun/2022:13:04:47 +0000] "GET /users/login HTTP/1.1" 200 2781 "http://localhost:9800/users/dashboard" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
-::1 - - [11/Jun/2022:13:04:56 +0000] "POST /users/login HTTP/1.1" 302 76 "http://localhost:9800/users/login" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
-::1 - - [11/Jun/2022:13:04:56 +0000] "GET /users/dashboard HTTP/1.1" 302 68 "http://localhost:9800/users/login" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
-::1 - - [11/Jun/2022:13:04:56 +0000] "GET /users/login HTTP/1.1" 200 2798 "http://localhost:9800/users/login" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
-::1 - - [11/Jun/2022:13:05:02 +0000] "POST /users/login HTTP/1.1" 302 76 "http://localhost:9800/users/login" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
-::1 - - [11/Jun/2022:13:05:02 +0000] "GET /users/dashboard HTTP/1.1" 302 68 "http://localhost:9800/users/login" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
-::1 - - [11/Jun/2022:13:05:02 +0000] "GET /users/login HTTP/1.1" 200 2798 "http://localhost:9800/users/login" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
-::1 - - [11/Jun/2022:13:05:04 +0000] "POST /users/login HTTP/1.1" 302 68 "http://localhost:9800/users/login" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
-::1 - - [11/Jun/2022:13:05:04 +0000] "GET /users/login HTTP/1.1" 200 2782 "http://localhost:9800/users/login" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
-::1 - - [11/Jun/2022:13:05:04 +0000] "POST /users/login HTTP/1.1" 302 68 "http://localhost:9800/users/login" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
-::1 - - [11/Jun/2022:13:05:04 +0000] "GET /users/login HTTP/1.1" 200 2503 "http://localhost:9800/users/login" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
-::1 - - [11/Jun/2022:13:05:11 +0000] "POST /users/login HTTP/1.1" 302 76 "http://localhost:9800/users/login" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
-::1 - - [11/Jun/2022:13:05:11 +0000] "GET /users/dashboard HTTP/1.1" 302 68 "http://localhost:9800/users/login" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
-::1 - - [11/Jun/2022:13:05:11 +0000] "GET /users/login HTTP/1.1" 200 2798 "http://localhost:9800/users/login" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
-::1 - - [11/Jun/2022:13:06:07 +0000] "POST /users/login HTTP/1.1" 302 76 "http://localhost:9800/users/login" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
-::1 - - [11/Jun/2022:13:06:07 +0000] "GET /users/dashboard HTTP/1.1" 302 68 "http://localhost:9800/users/login" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
-::1 - - [11/Jun/2022:13:06:07 +0000] "GET /users/login HTTP/1.1" 200 2798 "http://localhost:9800/users/login" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
-::1 - - [11/Jun/2022:13:11:10 +0000] "GET /users/login HTTP/1.1" 200 2503 "http://localhost:9800/users/login" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
-::1 - - [11/Jun/2022:13:11:22 +0000] "POST /users/login HTTP/1.1" 302 76 "http://localhost:9800/users/login" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
-::1 - - [11/Jun/2022:13:11:22 +0000] "GET /users/dashboard HTTP/1.1" 200 1325 "http://localhost:9800/users/login" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
-::1 - - [11/Jun/2022:13:11:23 +0000] "GET /users/logout HTTP/1.1" 302 68 "http://localhost:9800/users/dashboard" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
-::1 - - [11/Jun/2022:13:11:23 +0000] "GET /users/login HTTP/1.1" 200 2781 "http://localhost:9800/users/dashboard" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
-::1 - - [11/Jun/2022:13:31:18 +0000] "GET / HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.99 Safari/537.36"
-::1 - - [11/Jun/2022:13:31:19 +0000] "GET /favicon.ico HTTP/1.1" 404 150 "http://localhost:9800/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.99 Safari/537.36"
-::1 - - [11/Jun/2022:13:31:22 +0000] "GET /users/login HTTP/1.1" 200 2503 "http://localhost:9800/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.99 Safari/537.36"
-::1 - - [11/Jun/2022:13:31:25 +0000] "GET /users/auth/google HTTP/1.1" 302 0 "http://localhost:9800/users/login" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.99 Safari/537.36"
-::1 - - [11/Jun/2022:13:34:56 +0000] "GET /users/auth/google HTTP/1.1" 302 0 "http://localhost:9800/users/login" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
-::1 - - [11/Jun/2022:13:35:01 +0000] "GET /users/auth/google/callback?code=4%2F0AX4XfWgzrCJLqFzdwSqZeMzPWcxSlCT_pM88uSsDk5hXviIAgZJm3NIaGROZhyaVs8EokA&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid&authuser=0&prompt=consent HTTP/1.1" 302 76 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
-::1 - - [11/Jun/2022:13:35:01 +0000] "GET /users/dashboard HTTP/1.1" 200 1612 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
-::1 - - [11/Jun/2022:13:36:26 +0000] "GET /users/logout HTTP/1.1" 302 68 "http://localhost:9800/users/dashboard" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
-::1 - - [11/Jun/2022:13:36:26 +0000] "GET /users/login HTTP/1.1" 304 - "http://localhost:9800/users/dashboard" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
-::1 - - [11/Jun/2022:13:36:35 +0000] "GET /users/login/dashboard HTTP/1.1" 404 160 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
-::1 - - [11/Jun/2022:13:36:44 +0000] "GET /users/dashboard HTTP/1.1" 302 68 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
-::1 - - [11/Jun/2022:13:36:44 +0000] "GET /users/login HTTP/1.1" 200 2798 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
-::1 - - [11/Jun/2022:13:38:14 +0000] "GET /users/login HTTP/1.1" 200 2503 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
-::1 - - [11/Jun/2022:13:38:23 +0000] "POST /users/login HTTP/1.1" 302 76 "http://localhost:9800/users/login" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
-::1 - - [11/Jun/2022:13:38:23 +0000] "GET /users/dashboard HTTP/1.1" 302 68 "http://localhost:9800/users/login" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
-::1 - - [11/Jun/2022:13:38:23 +0000] "GET /users/login HTTP/1.1" 302 76 "http://localhost:9800/users/login" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
-::1 - - [11/Jun/2022:13:38:23 +0000] "GET /users/dashboard HTTP/1.1" 302 68 "http://localhost:9800/users/login" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
-::1 - - [11/Jun/2022:13:38:23 +0000] "GET /users/login HTTP/1.1" 200 2798 "http://localhost:9800/users/login" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
-::1 - - [11/Jun/2022:13:38:31 +0000] "POST /users/login HTTP/1.1" 302 76 "http://localhost:9800/users/login" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
-::1 - - [11/Jun/2022:13:38:32 +0000] "GET /users/dashboard HTTP/1.1" 200 1325 "http://localhost:9800/users/login" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
-::1 - - [11/Jun/2022:13:38:33 +0000] "GET /users/logout HTTP/1.1" 302 68 "http://localhost:9800/users/dashboard" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
-::1 - - [11/Jun/2022:13:38:33 +0000] "GET /users/login HTTP/1.1" 200 2781 "http://localhost:9800/users/dashboard" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
-::1 - - [11/Jun/2022:13:38:40 +0000] "POST /users/login HTTP/1.1" 302 76 "http://localhost:9800/users/login" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
-::1 - - [11/Jun/2022:13:38:40 +0000] "GET /users/dashboard HTTP/1.1" 304 - "http://localhost:9800/users/login" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
-::1 - - [11/Jun/2022:13:38:42 +0000] "GET /users/logout HTTP/1.1" 302 68 "http://localhost:9800/users/dashboard" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
-::1 - - [11/Jun/2022:13:38:42 +0000] "GET /users/login HTTP/1.1" 302 76 "http://localhost:9800/users/dashboard" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
-::1 - - [11/Jun/2022:13:38:42 +0000] "GET /users/dashboard HTTP/1.1" 302 68 "http://localhost:9800/users/dashboard" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
-::1 - - [11/Jun/2022:13:38:42 +0000] "GET /users/login HTTP/1.1" 200 2798 "http://localhost:9800/users/dashboard" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
-::1 - - [11/Jun/2022:13:38:52 +0000] "POST /users/login HTTP/1.1" 302 76 "http://localhost:9800/users/login" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
-::1 - - [11/Jun/2022:13:38:52 +0000] "GET /users/dashboard HTTP/1.1" 200 1325 "http://localhost:9800/users/login" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
-::1 - - [11/Jun/2022:13:38:54 +0000] "GET /users/logout HTTP/1.1" 302 68 "http://localhost:9800/users/dashboard" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
-::1 - - [11/Jun/2022:13:38:54 +0000] "GET /users/login HTTP/1.1" 302 76 "http://localhost:9800/users/dashboard" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
-::1 - - [11/Jun/2022:13:38:54 +0000] "GET /users/dashboard HTTP/1.1" 302 68 "http://localhost:9800/users/dashboard" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
-::1 - - [11/Jun/2022:13:38:54 +0000] "GET /users/login HTTP/1.1" 200 2781 "http://localhost:9800/users/dashboard" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
-::1 - - [11/Jun/2022:13:38:55 +0000] "GET /users/login HTTP/1.1" 200 2503 "http://localhost:9800/users/dashboard" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
-::1 - - [11/Jun/2022:13:39:03 +0000] "POST /users/login HTTP/1.1" 302 76 "http://localhost:9800/users/login" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
-::1 - - [11/Jun/2022:13:39:03 +0000] "GET /users/dashboard HTTP/1.1" 302 68 "http://localhost:9800/users/login" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
-::1 - - [11/Jun/2022:13:39:03 +0000] "GET /users/login HTTP/1.1" 200 2798 "http://localhost:9800/users/login" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
-::1 - - [11/Jun/2022:13:41:03 +0000] "POST /users/login HTTP/1.1" 302 68 "http://localhost:9800/users/login" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
-::1 - - [11/Jun/2022:13:41:03 +0000] "GET /users/login HTTP/1.1" 200 2781 "http://localhost:9800/users/login" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
-::1 - - [11/Jun/2022:13:44:02 +0000] "GET /users/login HTTP/1.1" 200 2503 "http://localhost:9800/users/login" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
-::1 - - [11/Jun/2022:13:44:10 +0000] "POST /users/login HTTP/1.1" 302 76 "http://localhost:9800/users/login" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
-::1 - - [11/Jun/2022:13:44:10 +0000] "GET /users/dashboard HTTP/1.1" 200 1325 "http://localhost:9800/users/login" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
-::1 - - [11/Jun/2022:13:44:11 +0000] "GET /users/logout HTTP/1.1" 302 68 "http://localhost:9800/users/dashboard" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
-::1 - - [11/Jun/2022:13:44:11 +0000] "GET /users/login HTTP/1.1" 200 2781 "http://localhost:9800/users/dashboard" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
-::1 - - [11/Jun/2022:13:44:18 +0000] "POST /users/login HTTP/1.1" 302 76 "http://localhost:9800/users/login" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
-::1 - - [11/Jun/2022:13:44:18 +0000] "GET /users/dashboard HTTP/1.1" 302 68 "http://localhost:9800/users/login" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
-::1 - - [11/Jun/2022:13:44:18 +0000] "GET /users/login HTTP/1.1" 200 2798 "http://localhost:9800/users/login" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
-::1 - - [11/Jun/2022:13:44:19 +0000] "POST /users/login HTTP/1.1" 302 68 "http://localhost:9800/users/login" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
-::1 - - [11/Jun/2022:13:44:19 +0000] "GET /users/login HTTP/1.1" 200 2782 "http://localhost:9800/users/login" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
-::1 - - [11/Jun/2022:13:44:27 +0000] "POST /users/login HTTP/1.1" 302 76 "http://localhost:9800/users/login" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
-::1 - - [11/Jun/2022:13:44:27 +0000] "GET /users/dashboard HTTP/1.1" 200 1325 "http://localhost:9800/users/login" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
-::1 - - [11/Jun/2022:13:44:28 +0000] "GET /users/logout HTTP/1.1" 302 68 "http://localhost:9800/users/dashboard" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
-::1 - - [11/Jun/2022:13:44:28 +0000] "GET /users/login HTTP/1.1" 302 76 "http://localhost:9800/users/dashboard" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
-::1 - - [11/Jun/2022:13:44:28 +0000] "GET /users/dashboard HTTP/1.1" 302 68 "http://localhost:9800/users/dashboard" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
-::1 - - [11/Jun/2022:13:44:28 +0000] "GET /users/login HTTP/1.1" 200 2781 "http://localhost:9800/users/dashboard" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
-::1 - - [11/Jun/2022:13:44:34 +0000] "POST /users/login HTTP/1.1" 302 76 "http://localhost:9800/users/login" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
-::1 - - [11/Jun/2022:13:44:34 +0000] "GET /users/dashboard HTTP/1.1" 302 68 "http://localhost:9800/users/login" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
-::1 - - [11/Jun/2022:13:44:34 +0000] "GET /users/login HTTP/1.1" 200 2798 "http://localhost:9800/users/login" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
-::1 - - [11/Jun/2022:13:44:46 +0000] "POST /users/login HTTP/1.1" 302 76 "http://localhost:9800/users/login" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
-::1 - - [11/Jun/2022:13:44:46 +0000] "GET /users/dashboard HTTP/1.1" 302 68 "http://localhost:9800/users/login" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
-::1 - - [11/Jun/2022:13:44:46 +0000] "GET /users/login HTTP/1.1" 200 2798 "http://localhost:9800/users/login" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
-::1 - - [11/Jun/2022:13:44:53 +0000] "POST /users/login HTTP/1.1" 302 76 "http://localhost:9800/users/login" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
-::1 - - [11/Jun/2022:13:44:53 +0000] "GET /users/dashboard HTTP/1.1" 200 1325 "http://localhost:9800/users/login" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
-::1 - - [11/Jun/2022:13:44:55 +0000] "GET /users/logout HTTP/1.1" 302 68 "http://localhost:9800/users/dashboard" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
-::1 - - [11/Jun/2022:13:44:55 +0000] "GET /users/login HTTP/1.1" 302 76 "http://localhost:9800/users/dashboard" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
-::1 - - [11/Jun/2022:13:44:55 +0000] "GET /users/dashboard HTTP/1.1" 302 68 "http://localhost:9800/users/dashboard" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
-::1 - - [11/Jun/2022:13:44:55 +0000] "GET /users/login HTTP/1.1" 200 2781 "http://localhost:9800/users/dashboard" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
-::1 - - [11/Jun/2022:13:46:48 +0000] "POST /users/login HTTP/1.1" 302 68 "http://localhost:9800/users/login" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
-::1 - - [11/Jun/2022:13:46:48 +0000] "GET /users/login HTTP/1.1" 200 2781 "http://localhost:9800/users/login" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
-::1 - - [11/Jun/2022:16:05:58 +0000] "GET / HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
-::1 - - [11/Jun/2022:16:05:59 +0000] "GET /favicon.ico HTTP/1.1" 404 150 "http://localhost:9800/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
-::1 - - [11/Jun/2022:16:06:00 +0000] "GET /users/login HTTP/1.1" 200 2503 "http://localhost:9800/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
-::1 - - [11/Jun/2022:16:06:02 +0000] "POST /users/login HTTP/1.1" 302 68 "http://localhost:9800/users/login" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
-::1 - - [11/Jun/2022:16:06:02 +0000] "GET /users/login HTTP/1.1" 200 2782 "http://localhost:9800/users/login" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
-::1 - - [11/Jun/2022:16:06:03 +0000] "GET /users/auth/google HTTP/1.1" 302 0 "http://localhost:9800/users/login" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
-::1 - - [11/Jun/2022:16:06:05 +0000] "GET /users/auth/google/callback?code=4%2F0AX4XfWhD79GqsBalvUWD728h6d_atQ8DyESdAznqEZqfLQ-Zh7ENrEgDLR9txbOCYNeObw&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+openid&authuser=0&prompt=none HTTP/1.1" 302 76 "http://localhost:9800/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
-::1 - - [11/Jun/2022:16:06:05 +0000] "GET /users/dashboard HTTP/1.1" 200 1607 "http://localhost:9800/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
-::1 - - [11/Jun/2022:16:06:06 +0000] "GET /users/logout HTTP/1.1" 302 68 "http://localhost:9800/users/dashboard" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
-::1 - - [11/Jun/2022:16:06:07 +0000] "GET /users/login HTTP/1.1" 200 2781 "http://localhost:9800/users/dashboard" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
-::1 - - [11/Jun/2022:16:06:15 +0000] "GET /users/register HTTP/1.1" 200 2988 "http://localhost:9800/users/login" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
-::1 - - [11/Jun/2022:16:06:17 +0000] "GET /users/login HTTP/1.1" 200 2503 "http://localhost:9800/users/register" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
-::1 - - [11/Jun/2022:16:06:19 +0000] "GET /users/forget-password HTTP/1.1" 200 1473 "http://localhost:9800/users/login" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
-::1 - - [11/Jun/2022:16:06:21 +0000] "POST /users/resetPassword HTTP/1.1" 302 130 "http://localhost:9800/users/forget-password" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
-::1 - - [11/Jun/2022:16:06:21 +0000] "GET /users/forget-password HTTP/1.1" 304 - "http://localhost:9800/users/forget-password" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
-::1 - - [11/Jun/2022:16:06:24 +0000] "POST /users/resetPassword HTTP/1.1" 302 130 "http://localhost:9800/users/forget-password" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
-::1 - - [11/Jun/2022:16:06:24 +0000] "GET /users/forget-password HTTP/1.1" 200 1755 "http://localhost:9800/users/forget-password" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
-::1 - - [11/Jun/2022:16:06:51 +0000] "POST /users/resetPassword HTTP/1.1" 302 130 "http://localhost:9800/users/forget-password" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
-::1 - - [11/Jun/2022:16:06:51 +0000] "GET /users/forget-password HTTP/1.1" 200 1473 "http://localhost:9800/users/forget-password" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
+[0mGET /users/dashboard [32m200[0m 59.499 ms - 1320[0m
+[0mGET /users/logout [36m302[0m 34.168 ms - 68[0m
+[0mGET /users/login [32m200[0m 12.792 ms - 2781[0m
+[0mGET /users/forget-password [32m200[0m 14.462 ms - 1473[0m
+[0mPOST /users/resetPassword [36m302[0m 79.560 ms - 130[0m
+[0mGET /users/forget-password [32m200[0m 7.795 ms - 1755[0m
+[0mGET /users/forget-password [32m200[0m 47.277 ms - 1473[0m
+[0mPOST /users/resetPassword [36m302[0m 101.307 ms - 130[0m
+[0mGET /users/forget-password [32m200[0m 34.035 ms - 1755[0m
+[0mPOST /users/resetPassword [36m302[0m 67.535 ms - 130[0m
+[0mGET /users/forget-password [36m304[0m 14.608 ms - -[0m
+[0mGET /users/register [32m200[0m 13.697 ms - 2999[0m
+[0mGET /users/auth/google [36m302[0m 15.388 ms - 0[0m
+[0mGET /users/auth/google/callback?code=4%2F0AVHEtk4odxTf5TKKkjjQ8nl7inBvTk2WEoMLU1Wl2iD4_K20vnE2o5dB0vWIZd6UXFhqbg&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid&authuser=0&prompt=consent [36m302[0m 1086.629 ms - 76[0m
+[0mGET /users/dashboard [32m200[0m 30.521 ms - 1607[0m
+[0mGET /users/changepassword [32m200[0m 12.442 ms - 1671[0m
+[0mGET /users/logout [36m302[0m 11.339 ms - 68[0m
+[0mGET /users/login [36m304[0m 10.197 ms - -[0m
+[0mGET /users/reset-password [32m200[0m 57.422 ms - 1779[0m
+[0mGET /users/reset-password/12345 [33m404[0m 27.406 ms - 165[0m
+[0mGET /users/reset-password/ [32m200[0m 48.289 ms - 1779[0m
+[0mGET /users/reset-password/ [36m304[0m 18.406 ms - -[0m
+[0mGET /users/reset-password?token=PoXTJ0mSFacQwUaCNygwz5voSbvOyYfr [32m200[0m 14.760 ms - 1779[0m
+[0mGET /users/reset-password?token=PoXTJ0mSFacQwUaCNygwz5voSbvOyYfr [36m304[0m 14.338 ms - -[0m
+[0mPOST /users/reset-password [36m302[0m 176.159 ms - 68[0m
+[0mGET /users/login [32m200[0m 4.153 ms - 2790[0m
+[0mPOST /users/login [36m302[0m 133.050 ms - 76[0m
+[0mGET /users/dashboard [36m302[0m 6.463 ms - 68[0m
+[0mGET /users/login [32m200[0m 5.008 ms - 2798[0m
+[0mPOST /users/login [36m302[0m 122.590 ms - 76[0m
+[0mGET /users/dashboard [32m200[0m 10.364 ms - 1320[0m
+[0mGET /users/logout [36m302[0m 14.908 ms - 68[0m
+[0mGET /users/login [32m200[0m 8.086 ms - 2781[0m
+[0mGET /users/forget-password [32m200[0m 7.705 ms - 1473[0m
+[0mPOST /users/resetPassword [36m302[0m 28.131 ms - 130[0m
+[0mGET /users/forget-password [32m200[0m 11.395 ms - 1755[0m
+[0mGET /users/forget-password?token=IwBQepdtVaZnBruGqWkET3BGinWheUtl [32m200[0m 15.780 ms - 1473[0m
+[0mGET /users/forget-password?token=IwBQepdtVaZnBruGqWkET3BGinWheUtl [36m304[0m 7.768 ms - -[0m
+[0mGET /users/reset-password?token=IwBQepdtVaZnBruGqWkET3BGinWheUtl [32m200[0m 20.726 ms - 1779[0m
+[0mPOST /users/reset-password [36m302[0m 46.548 ms - 206[0m
+[0mGET /users/reset-password?token=IwBQepdtVaZnBruGqWkET3BGinWheUtl [32m200[0m 26.244 ms - 2080[0m
+[0mPOST /users/reset-password [36m302[0m 152.204 ms - 68[0m
+[0mGET /users/login [32m200[0m 6.453 ms - 2790[0m
+[0mPOST /users/login [36m302[0m 122.752 ms - 76[0m
+[0mGET /users/dashboard [36m304[0m 9.869 ms - -[0m
+[0mGET /users/logout [36m302[0m 23.480 ms - 68[0m
+[0mGET /users/login [32m200[0m 15.212 ms - 2781[0m
+[0mGET /users/forget-password [32m200[0m 12.632 ms - 1473[0m
+[0mPOST /users/resetPassword [36m302[0m 61.032 ms - 130[0m
+[0mGET /users/forget-password [32m200[0m 3.341 ms - 1755[0m
+[0mGET /users/reset-password [32m200[0m 20.899 ms - 1779[0m
+[0mGET /users/reset-password?token=nSPHELDv5ZQ4qaalvInwjBRJ2Iuz8PXu [32m200[0m 14.731 ms - 1779[0m
+[0mPOST /users/reset-password [36m302[0m 136.631 ms - 68[0m
+[0mGET /users/login [32m200[0m 3.847 ms - 2790[0m
+[0mPOST /users/login [36m302[0m 117.017 ms - 76[0m
+[0mGET /users/dashboard [36m304[0m 7.350 ms - -[0m
+[0mGET /users/logout [36m302[0m 15.508 ms - 68[0m
+[0mGET /users/login [32m200[0m 6.749 ms - 2781[0m
+[0mGET /users/auth/google [36m302[0m 9.343 ms - 0[0m
+[0mGET /users/auth/google/callback?code=4%2F0AWtgzh6Z1sTeJwbEkuu4aYPvQ1tZ-3cC2gdOgDQC_GZoz2_tAIa8ZZNMMqV001B7qpfj3Q&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid&authuser=0&prompt=consent [36m302[0m 1004.526 ms - 76[0m
+[0mGET /users/dashboard [32m200[0m 19.973 ms - 1607[0m
+[0mGET /users/logout [36m302[0m 9.031 ms - 68[0m
+[0mGET /users/login [36m304[0m 9.007 ms - -[0m
