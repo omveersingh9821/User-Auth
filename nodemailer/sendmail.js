@@ -1,7 +1,6 @@
 const res = require('express/lib/response');
 const nodemailer = require('nodemailer');
 
-// const env = require('../config/environment');
 require('dotenv').config();
 
 

@@ -1,11 +1,8 @@
 //require express
 const express = require('express');
 
-//require environment
-const env = require('./config/environment');
-const logger = require('morgan');
-
 require('dotenv').config();
+
 //express layouts -- npm i express-layouts
 const expressLayouts = require('express-ejs-layouts');
 
@@ -38,7 +35,6 @@ const port = 9800;
 const app = express();
 require('./config/passport')(passport);
 
-app.use(logger(env.morgan.mode,env.morgan.options));
 
 //EJS
 app.use(expressLayouts);
