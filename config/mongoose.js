@@ -1,6 +1,7 @@
 //require the library
 const mongoose = require('mongoose');
 
+mongoose.set('strictQuery',true);
 // connect to the database
 const url = process.env.MONGODB_URL;
 mongoose.connect(url || "mongodb://0.0.0/user_authentication"); 
